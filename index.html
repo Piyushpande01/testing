@@ -9,11 +9,12 @@
     * {
         margin: 0;
         padding: 0;
-       
+        box-sizing: border-box;
     }
 
     .header {
-        padding: 20px 40px;
+        margin-top: 0px;
+        padding: 10px 20px;
         justify-content: center;
         display: flex;
         background-color: white;
@@ -37,11 +38,9 @@
 
     .headingheader {
         color: black;  
-        justify-content: right;
-        display: flex;
-        flex-direction: column;
         font-size: 30px;
-        
+        position: absolute;
+        left: 5%;
     }
 
     .heading2 {
@@ -68,51 +67,55 @@
     }
 
     .product {
-        justify-content: flex-start;
-        display: flex;
-        gap: 10px;
-      
-        padding: 10px;
+        display: flex; /* Set the flex layout to row */
+        gap: 20px; /* Optional gap between the three products */
+        justify-content: center; /* Center align the products */
+        padding: 20px;
     }
 
-    .FIRSTPRO {
+    .FIRSTPRO, .secondpro, .thirdpro {
         align-items: center;
         display: flex;
         flex-direction: column;
         background-color: black;
         padding: 20px;
+        width: 300px; /* Set a fixed width for each product box */
     }
 
-    .FIRSTPRO img {
+    .FIRSTPRO img, .secondpro img, .thirdpro img {
         width: 300px;
         height: 300px;
         object-fit: cover;
-        border: 5px solid #fff; 
+        border: 5px solid #fff;
     }
 
-    .FIRSTPRO button {
+    .FIRSTPRO button, .secondpro button, .thirdpro button {
         margin-top: 10px;
         padding: 10px;
         font-size: 16px;
         width: 100%;
-        text-transform: uppercase; 
+        text-transform: uppercase;
     }
 
-    .FIRSTPRO button:first-child {
-        text-transform: uppercase; 
+    .FIRSTPRO button:first-child, .secondpro button:first-child, .thirdpro button:first-child {
+        text-transform: uppercase;
     }
 
-    .FIRSTPRO button:last-child {
-        text-transform: lowercase; 
+    .FIRSTPRO button:last-child, .secondpro button:last-child, .thirdpro button:last-child {
+        text-transform: lowercase;
+    }
+
+    .secondimg, .thirdimg {
+        display: flex;
     }
 </style>
 <body>
     <div class="header">
         <h1 class="headingheader">LUXE</h1>
-        <button>Men</button>
+        <button class="button1">Men</button>
         <button>Women</button>
         <button>Sport</button>
-        <button>Collection</button> 
+        <button>Collection</button>
         <button>Sale</button>
     </div>
     <div>
@@ -132,7 +135,39 @@
             <button>ADD TO CART</button>
             <button>BUY NOW</button>
         </div>
+
+        <div class="secondpro">
+            <div class="secondimg">
+                <img src="/ervo-rocks-Zam8TvEgN5o-unsplash.jpg" alt="Product 2">
+            </div>
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+        </div>
+
+        <div class="thirdpro">
+            <div class="thirdimg">
+                <img src="./third pro.jpg" alt="Product 3">
+            </div>
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+        </div>
+    </div>
+    <div style="display: flex;  gap: 10px; justify-content: center; "> 
+      
+        <div>
+            <img src="./category.jpg" alt="" height="300px" width="300px">
+            
+        </div> 
+
+         <div>
+            <img src="./c-d-x-PDX_a_82obo-unsplash.jpg" alt="" height="300px" width="300px">
+        </div> 
+        
+        <div>
+            <img src="./ervo-rocks-Zam8TvEgN5o-unsplash.jpg" alt="" height="300px" width="300px">
+        </div>
      
+
     </div>
 </body>
 </html>
