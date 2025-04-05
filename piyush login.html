@@ -66,21 +66,20 @@
         color: white;
     }
     .signup{
-        border: 2px solid black;
-        font-size: 20px;
-        border-radius: 20px;
-        padding: 10px;
-        color: white;
         background-color: black;
+        color: white;
+        
     }
     .website{
-        border: 2px solid black;
-        font-size: 20px;
-        border-radius: 20px;
-        padding: 10px;
+       
         color: white;
         background-color: black;
     }
+    .login{
+        background-color: black;
+        color: white;
+    }
+   
 </style>
 <body>
     <div class="con">
@@ -91,11 +90,11 @@
                 <br/>
                 <input type="password" placeholder="ENTER YOUR PASSWORD"/>
                 <br/>
-                <button type="submit">LOGIN</button>
+                <a><button type="submit" class="login">LOGIN</button></a>
             </form>
             <div style="display: flex; gap: 2px;">
-            <a  href="./sign in.html" class="signup">siginup</a>
-            <a href="./index.html" class="website">website</a>
+            <a  href="./sign in.html" ><button class="signup">siginup</button></a>
+           <a href="./index.html" > <button class="website">website</button></a>
         </div>
         </div>
     </div>

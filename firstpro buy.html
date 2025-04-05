@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 80%;
+        }
+
+        .image-section {
+            width: 70%;
+            background-color: #333;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            margin-left: 20px;
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+
+        .price h2 {
+            font-size: 1.5rem;
+            color: green;
+        }
+
+        .price del {
+            font-size: 1.2rem;
+            color: red;
+            margin-left: 10px;
+        }
+
+        .price h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .price p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .buynow{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-section">
+        <img src="./headphone_png-removebg-preview.png" alt="Headphones" />
+    </div>
+    <div class="price">
+        <div>
+            <h1>ACTION BUDS</h1>
+            <h2>₹1599.00</h2>
+            <del>₹6299.00</del>
+        </div>
+        
+        
+        <p>These EarBuds Have Noise Cancellation and are Water Resistant. These Buds Give 50hr Playback time.</p>
+        
+        <div>
+            <img src="/c-d-x-PDX_a_82obo-unsplash.jpg" alt="" width="50px" height="50px" >
+            <img src="/ervo-rocks-Zam8TvEgN5o-unsplash.jpg" alt="" width="50px" height="50px">
+            <img src="/headphone_png-removebg-preview.png" alt="" width="50px" height="50px" style="background-color: black;
+            ">
+            <br/>
+            <a  class="buyfirst" style="border: 1px solid black; text-decoration: none; color: black;" href=""><button class=" buynow">BUY NOW</button></a>
+        </div>
+    </div>
+   
+</div>
+
+</body>
+</html>

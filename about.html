@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .product {
+        display: flex; /* Set the flex layout to row */
+        gap: 20px; /* Optional gap between the three products */
+        justify-content: center; /* Center align the products */
+        padding: 20px;
+    }
+    .header {
+        margin-top: 0px;
+        padding: 10px 20px;
+        justify-content: center;
+        display: flex;
+        background-color: white;
+    }
+
+    .header > button {
+        background-color: transparent;
+        color: gray;
+        border: none;
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header > button:hover {
+        color: black;
+        cursor: pointer;
+    }
+    .headingheader {
+        color: black;  
+        font-size: 30px;
+        position: absolute;
+        left: 5%;
+        top: 1%;
+    }
+    .FIRSTPRO, .secondpro, .thirdpro {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        padding: 20px;
+        width: 300px; /* Set a fixed width for each product box */
+    }
+
+    .FIRSTPRO img, .secondpro img, .thirdpro img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border: 5px solid #fff;
+    }
+
+    .FIRSTPRO button, .secondpro button, .thirdpro button {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    .FIRSTPRO button:first-child, .secondpro button:first-child, .thirdpro button:first-child {
+        text-transform: uppercase;
+    }
+
+    .FIRSTPRO button:last-child, .secondpro button:last-child, .thirdpro button:last-child {
+        text-transform: lowercase;
+    }
+   
+</style>
+<body>
+    <div class="header">
+        <h1 class="headingheader">LUXE</h1>
+        <button>Men</button>
+        <button>Women</button>
+        <button>Sport</button>
+        <button>Collection</button>
+        <button>Sale</button>
+    </div>
+   
+     
+     <div><img src="./about banner.jpg" alt="" height="100%" width="100%"></div>
+     <div><h1 style="display: flex; justify-content: center; " >MOST POPULAR</h1></div>
+     <div><p style="display: flex; justify-content: center; font-size: 30px;">THESE ARE MOST POPULAR HEADPHONE</p></div>
+     <div class="product">
+     <div class="FIRSTPRO">
+     <div class="image-box"><img src="./about 1 pro.webp" alt="product 1"></div>
+     <button>ADD TO CART</button>
+     <button>BUY NOW</button>
+     </div>
+     <div class="secondpro">
+        <div class="secondimg">
+            <img src="./about 2 pro.webp" alt="Product 2">
+        </div>
+        <button>ADD TO CART</button>
+        <button>BUY NOW</button>
+    </div>
+</div>
+</html>
