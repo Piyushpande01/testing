@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .con{
+        position: relative; /* Add this line */
+        height: 100%;
+        width: 100%;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Ensures the image covers the area */
+    }
+    .container{
+        position: absolute; /* Position it over the image */
+        top: 50%; /* Position it vertically at the center */
+        left: 50%; /* Position it horizontally at the center */
+        transform: translate(-50%, -50%); 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 400px;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgba(220,220,220,0.6);
+        
+    }
+    input{
+        margin: 5px 0px;
+        height: 35px;
+        padding: 7px;
+    }
+    button{
+        height: 35px;
+        margin: 5px 0px;
+        padding: 5px;
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+        color: black;
+    }
+    button:hover{
+        background-color: black;
+        cursor: pointer;
+        color: white;
+    }
+    .signup{
+        border: 2px solid black;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 10px;
+        color: white;
+        background-color: black;
+    }
+    .website{
+        border: 2px solid black;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 10px;
+        color: white;
+        background-color: black;
+    }
+</style>
+<body>
+    <div class="con">
+        <img src="/server.jpg" alt="" />
+        <div class="container">
+            <form>
+                <input type="email" placeholder="ENTER YOUR EMAIL"/>
+                <br/>
+                <input type="password" placeholder="ENTER YOUR PASSWORD"/>
+                <br/>
+                <button type="submit">LOGIN</button>
+            </form>
+            <div style="display: flex; gap: 2px;">
+            <a  href="./sign in.html" class="signup">siginup</a>
+            <a href="./index.html" class="website">website</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
