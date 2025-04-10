@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        position: absolute;
+        top: 30%;
+        left: 40%;
+      
+        border: 1px solid black;
+        border-radius: 2px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 300px;
+        background-color: #034078;
+        
+    }
+    input{
+        margin: 10px;
+        padding: 7px;
+    }
+    .butt{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       margin: 10px;
+    }
+    .con{
+        position: relative; 
+        height: 100%;
+        width: 100%;
+        background-color: #0466c8;
+        box-shadow: #0466c8;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover; 
+    }
+</style>
+<body>
+    <div class="con">
+        <img src="./back.webp" alt="">
+        <div class="container">
+            <form>
+                <input type="email" placeholder="EMAIL"/>
+                <BR/>
+                <input type="password" placeholder="PASSWORD"/>
+                <BR/>
+                
+            </form>
+            <a href="./index.html"><button type="submit" class="butt" style="width: 200px; height: 50px; background-color: blueviolet;
+            margin: 0px;">submit</button></a>
+            <br/>
+          <a href="./sign in.html">  <button type="submit" style="position: relative; justify-content: center; align-items: center; 
+            display: flex; width: 70px; height: 15px; background-color: plum;">SIGN UP</button></a>
+        </div>
+    </div>
+</body>
+</html>
