@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .abbr {
+    padding:5x 10px;
+    background-color: pink;
+
+}
+
+.abbr:hover:before {
+   content: attr(title);
+   position:absolute;
+    background:#000;
+    color:#fff;
+    padding:5px 10px;
+   
+}
+.abbr:hover:after{
+    content: '';
+    position: relative;
+}
+
+
+
+</style>
+<body>  
+   <a href="./about 1 pro.webp" download>
+    <abbr class="abbr" title="photo of banner"><button   style="background-color: black; color: white; padding: 10px; justify-content: center;
+   align-items: center;">DOWNLOAD</button></abbr> </a>
+   <br/>
+    <abbr data-yeah="United States of America">USA</abbr>
+    
+</body>
+</html>

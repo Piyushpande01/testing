@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .con{
+        position: relative; /* Add this line */
+        height: 100%;
+        width: 100%;
+        color: #2b48a5;
+        background-color: #f4f6f6;
+    }
+  
+    .container{
+        position: absolute; /* Position it over the image */
+        top: 50%; /* Position it vertically at the center */
+        left: 50%; /* Position it horizontally at the center */
+        transform: translate(-50%, -50%); 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 400px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: white;
+        
+    }
+    input{
+        margin: -2px 0px;
+        height: 35px;
+        padding: 2px;
+    }
+    button{
+        height: 35px;
+        margin: 5px 0px;
+        padding: 5px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        
+    }
+    .logintext{
+        color: black;
+        margin-bottom: 10%;
+        margin-left: 15%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .forget{
+        font-size: 13px;
+        size: 2px;
+        margin-top: 1%;
+    }
+    button:hover{
+        cursor: pointer;
+
+    }
+    .signbutton{
+        
+        height: 35px;
+        margin: 5px 0px;
+        padding: 5px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        text-decoration: none;
+    }
+
+  
+
+</style>
+<body>
+    <div class="con">
+       
+  
+        <div class="container">
+            <form class="form"  style="display: flex; gap: 0px; flex-direction: column;">
+                <h1 class="logintext" style="text-align: center; margin-right: 15%; margin-top: 5%;">LOGIN</h1>
+                <input type="email" placeholder="ENTER THE EMAIL">
+                <br/>
+                <input type="password" placeholder="ENTER THE PASSWORD"/>
+                <br/>
+                <a class="signbutton" style="width: 100%; justify-content: center; align-items: center; text-align: center;
+               " href="./sign in.html" >LOGIN</a>
+               <a class="signbutton" style="width: 100%; justify-content: center; align-items: center; text-align: center;
+               " href="./sign in.html" >SIGN UP</a>
+                <p style="font-size: 15px;">FORGET YOUR PASSWORD &LongRightArrow;<a class="forget" href="">FORGET PASSWORD?</a></p>
+            </form>
+          
+        </div>
+    </div>
+   
+    
+</body>
+</html>

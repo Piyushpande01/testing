@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Signup Form</h2>
+    <form id="signupform">
+        <label>name</label><br>
+        <input type="text" id="name" required/>
+        <label>email:</label><br>
+        <input type="email" id="email" required/>
+        <label>password:</label><br>
+        <input type="password" id="password" required/>
+        <button type="submit">Sign Up</button>
+
+    </form>
+    <p id="responseMessage"></p>
+    <script>
+        const form = document.getElementById('signupForm');
+        const responseMsg = document.getElementById('responseMessage');
+        
+        form.addEventListener('submit', async (e) => {
+        
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        try {
+            const res = await fetch('http://localhost:5000/api/auth/signup',{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+
+            },
+            body: JSON.stringify({ name, email, password })
+            });
+            const data = await res.json();
+            if (res.ok) {
+                responseMsg.textContent = data.message;
+            } else {
+                responseMsg.textContent = data.message || 'Signup failed';
+                }
+                } catch (error) {
+                    responseMsg.textContent = 'Error: ' + error.message;
+                }
+
+            });
+     
+
+
+
+
+
+        </script>
+    
+</body>
+</html>

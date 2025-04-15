@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <form id="login-form">
+        <input placeholder="enter the name" type="email" id="email" />
+        <br/>
+        <input placeholder="enter the pass" type="password" id="password" />
+        <br/>
+        <button type="submit">login</button>
+    </form>
+    <p id="message"></p>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                const response = await fetch('https://login-and-authentication-system-1.onrender.com/user/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+
+                const data = await response.json();
+                document.getElementById('message').textContent = data.message;
+
+                if (response.ok) {
+                    alert("login successful!");
+                    // window.location.href = "dashboard.html";
+                }
+            } catch (err) {
+                document.getElementById('message').textContent = 'Error: ' + err.message;
+            }
+        });
+    </script>
+</body>
+</html>
