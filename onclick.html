@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Tabs</title>
+    <style>
+        .tab-content {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .tabs button {
+            margin-right: 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <div class="tabs">
+        <button onclick="showtab('email')">Email</button>
+        <button onclick="showtab('phone')">Phone</button>
+        <button onclick="showtab('address')">Address</button>
+    </div>
+
+    <div id="email" class="tab-content">
+        <p>Email us at: <a href="mailto:example@example.com">example@example.com</a></p>
+    </div>
+
+    <div id="phone" class="tab-content">
+        <p>Call us at: <strong>+1-234-567-890</strong></p>
+    </div>
+
+    <div id="address" class="tab-content">
+        <p>Welcome to our world!</p>
+        <img src="./c-d-x-PDX_a_82obo-unsplash.jpg" alt="Our office" width="300px" height="300px">
+    </div>
+
+    <script>
+        const showtab = (tabid) => {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabid).style.display = 'block';
+        }
+
+        // Show the email tab by default when page loads
+        showtab('phone');
+    </script>
+</body>
+</html>
