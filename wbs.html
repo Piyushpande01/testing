@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .header {
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            box-shadow: 10px 10px 20px -5px blue;
+            
+           
+        }
+
+        .header button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+           
+            
+            
+            
+        }
+       
+       
+
+        .intro {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            background-color: black;
+            color: white;
+            width: 100%;
+            position: relative;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .txt {
+            flex: 1;
+        }
+
+        .piyush {
+            font-size: 50px;
+            color: blue;
+            margin-bottom: 20px;
+           text-shadow: 1px 1px 20px blue;
+        }
+
+        .para {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .intro img {
+            width: 300px;
+            height: 400px;
+            object-fit: contain;
+            flex: 1;
+            filter: drop-shadow(1px 1px 20px #423eb8);
+            border-radius: 100px;
+           
+            
+        }
+        .PROJ{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            color: #221bf1;
+            margin-top: 3%;
+            text-shadow: 1px 1px 20px  blue;
+            font-size: 50px;
+        }
+        .intro img:hover{
+            cursor: pointer;
+            filter: drop-shadow(1px 1px 20px #fcfcfc);
+            transition: ease-in-out 0.7s;
+           transition: ease-out 0.7s;
+          
+            
+        }
+        .card{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px blue;
+        color: white;
+        margin-left: 2%;
+        margin-bottom: 10%;
+    }
+        
+       
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <button>HOME</button>
+            <button>LAYOUT</button>
+            <button>ABOUT</button>
+        </div>
+
+        <div class="intro">
+            <div class="txt">
+                <h1 class="piyush">I'AM PIYUSH PANDEY</h1>
+                <p class="para">############3</p>
+                <p class="para">########</p>
+                <p class="para">##########</p>
+            </div>
+            
+            <img src="./ai-removebg-preview.png" alt="Piyush Image">
+        
+        </div>
+     
+        
+    </div>
+    <div>
+        <h1 class="PROJ">PROJECT </h1>
+    </div>
+    <div style="display: flex; flex-direction: row; gap: 20px; justify-content: center; align-items: center;">
+    <div >
+        <div class="card">
+        <h1>PROJECT</h1>
+        <img src="./ChatGPT Image Apr 18, 2025, 10_06_53 PM.png" alt="" height="300px" width="300px">
+        <p>This Project Basically 
+            used for hotel work
+            which can help for book room
+            in hotel 
+            room view
+        </p>
+    </div>
+    </div>
+    <div >
+        <div class="card">
+        <h1>PROJECT</h1>
+        <img src="./ChatGPT Image Apr 18, 2025, 10_06_53 PM.png" alt="" height="300px" width="300px">
+        <p>This Project Basically 
+            used for hotel work
+            which can help for book room
+            in hotel 
+            room view
+        </p>
+    </div>
+    </div> <div >
+        <div class="card">
+        <h1>PROJECT</h1>
+        <img src="./ChatGPT Image Apr 18, 2025, 10_06_53 PM.png" alt="" height="300px" width="300px">
+        <p>This Project Basically 
+            used for hotel work
+            which can help for book room
+            in hotel 
+            room view
+        </p>
+    </div>
+    </div>
+</div>
+</body>
+</html>
